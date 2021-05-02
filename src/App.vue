@@ -1,24 +1,21 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <Headline />
-  <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
+  <div class="w-full h-full">
+    <Section title="Schlafgelegenheiten">
+      <template #content>
+        <InfoCard icon="Icon" title="Schlafzimmer 1" details="2 Betten" />
+      </template>
+    </Section>
+    <Section title="Ausstattung">
+      <template #content>
+        <InfoListItem icon="icon" text="TV" />
+        <InfoListItem icon="icon" text="TV" />
+      </template>
+    </Section>
+  </div>
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue';
-import Headline from './components/Headline.vue';
-
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
+import InfoCard from './components/InfoCard.vue'
+import Section from './components/Section.vue'
+import InfoListItem from './components/InfoListItem.vue'
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
