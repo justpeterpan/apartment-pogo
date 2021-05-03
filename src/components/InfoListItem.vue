@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-row gap-2 text-lg">
-    <div>{{ icon }}</div>
+  <li class="flex flex-row gap-2 text-lg">
+    <img :src="icon" />
     <div>{{ text }}</div>
-  </div>
+  </li>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-2xl font-bold my-6">{{ text }}</h2>
+  <h1 class="text-3xl font-bold m-10">{{ text }}</h1>
 </template>
 
 <script>
@@ -12,3 +12,5 @@ export default {
   },
 }
 </script>
+
+<style></style>
