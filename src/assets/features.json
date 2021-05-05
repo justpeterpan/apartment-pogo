@@ -1,10 +1,10 @@
 [
   {
     "feature": "W-Lan",
-    "icon": "/src/assets/icons/wifi.svg"
+    "name": "wifi"
   },
   {
     "feature": "TV",
-    "icon": "/src/assets/icons/tv.svg"
+    "name": "tv"
   }
 ]

@@ -1,6 +1,6 @@
 <template>
   <ul v-for="(item, index) of items" :key="index">
-    <InfoListItem :icon="item.icon" :text="item.feature" />
+    <InfoListItem :icon="item.name" :text="item.feature" />
   </ul>
 </template>
 
@@ -8,6 +8,7 @@
 import InfoListItem from './InfoListItem.vue'
 
 export default {
+  name: 'InfoList',
   components: { InfoListItem },
   props: {
     items: {

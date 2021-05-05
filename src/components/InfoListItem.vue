@@ -1,12 +1,16 @@
 <template>
   <li class="flex flex-row gap-2 text-lg">
-    <img :src="icon" />
+    <Icon :name="icon" />
     <div>{{ text }}</div>
   </li>
 </template>
 
 <script>
+import Icon from './Icon.vue'
+
 export default {
+  name: 'InfoListItem',
+  components: { Icon },
   props: {
     icon: {
       type: String,
