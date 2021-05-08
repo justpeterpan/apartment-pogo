@@ -1,9 +1,12 @@
 <template>
   <div class="w-full h-full md:container md:mx-auto">
-    <div id="mobile-header" class="bg-gradient-to-t from-white md:hidden">
+    <div id="mobile-header" class="md:hidden">
       <img
-        src="/src/assets/img/haus.png"
-        class="md:hidden"
+        id="mobile-header_image"
+        :src="imgUrl"
+        class="object-cover h-auto max-w-full md:hidden"
+        :width="computedWidth"
+        :height="computedHeight"
       />
     </div>
     <hero />
@@ -41,7 +44,7 @@
 
       <content-section title="Ausstattung">
         <template #content>
-          <info-list :items="Features" />
+          <info-list :items="features" />
           <br />
           🏗️ Infos erweitern
         </template>
@@ -65,11 +68,37 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import Hero from './components/Hero.vue'
 import InfoCard from './components/InfoList/InfoCard.vue'
 import ContentSection from './components/ContentSection.vue'
 import InfoList from './components/InfoList/InfoList.vue'
 import Features from './assets/features.json'
 import ImageGrid from './components/ImageGrid.vue'
+
+export default {
+  components: {
+    Hero,
+    InfoCard,
+    ContentSection,
+    InfoList,
+    Features,
+    ImageGrid,
+  },
+  data() {
+    return {
+      features: Features,
+      imgUrl: '/src/assets/img/haus.png',
+    }
+  },
+  computed: {
+    computedWidth() {
+      return `${window.innerWidth}`
+    },
+    computedHeight() {
+      const width = window.innerWidth
+      return (width / 16) * 9
+    },
+  },
+}
 </script>

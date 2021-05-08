@@ -2,7 +2,7 @@
   <div class="m-10">
     <headline-2 :text="title" />
     <slot name="content"></slot>
-    <hr class="mt-14" />
+    <hr class="mt-8 md:mt-14" />
   </div>
 </template>
 
