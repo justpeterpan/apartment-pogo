@@ -2,7 +2,7 @@
   <div class="w-full h-full md:container md:mx-auto">
     <div id="mobile-header" class="bg-gradient-to-t from-white md:hidden">
       <img
-        src="./assets/img/haus.webp"
+        src="/src/assets/img/haus.png"
         class="md:hidden opacity-90 mix-blend-lighten"
       />
     </div>
