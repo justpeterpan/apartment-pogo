@@ -3,7 +3,7 @@
     <div id="mobile-header" class="bg-gradient-to-t from-white md:hidden">
       <img
         src="/src/assets/img/haus.png"
-        class="md:hidden opacity-90 mix-blend-lighten"
+        class="md:hidden"
       />
     </div>
     <hero />
