@@ -1,6 +1,6 @@
 <template>
   <div class="m-10">
-    <Headline2 :text="title" />
+    <headline-2 :text="title" />
     <slot name="content"></slot>
     <hr class="mt-14" />
   </div>
