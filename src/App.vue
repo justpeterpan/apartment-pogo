@@ -3,7 +3,7 @@
     <div id="mobile-header" class="md:hidden">
       <img
         id="mobile-header_image"
-        :src="imgUrl"
+        src="/src/assets/img/haus.png"
         class="object-cover h-auto max-w-full md:hidden"
         :width="computedWidth"
         :height="computedHeight"
@@ -88,7 +88,6 @@ export default {
   data() {
     return {
       features: Features,
-      imgUrl: '/src/assets/img/haus.png',
     }
   },
   computed: {
