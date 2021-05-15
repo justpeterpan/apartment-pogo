@@ -1,10 +1,12 @@
 [
   {
     "feature": "W-Lan",
-    "name": "wifi"
+    "name": "wifi",
+    "title": "Schnelles und sicheres Wlan!"
   },
   {
     "feature": "TV",
-    "name": "tv"
+    "name": "tv",
+    "title": "TV in HD und noch viel mehr!"
   }
 ]

@@ -1,7 +1,10 @@
 <template>
   <div class="m-10">
-    <headline-2 :text="title" />
-    <slot name="content"></slot>
+    <div class="flex">
+      <headline-2 :text="title" class="flex-1" />
+      <slot name="avatar" />
+    </div>
+    <slot name="content" />
     <hr class="mt-8 md:mt-14" />
   </div>
 </template>

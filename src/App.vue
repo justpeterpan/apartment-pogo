@@ -15,22 +15,37 @@
     </div>
     <!-- TODO loop over content-sections -->
     <div id="content">
-      <content-section title="Ferienwohnung">
+      <content-section title="Ferienwohnung, Gastgeber ist Micky Maus">
+        <template #avatar>
+          <img
+            src="https://a0.muscache.com/im/pictures/user/4537fb3d-813d-4d9f-a11d-135359870033.jpg?im_w=240"
+            alt=""
+            class="w-14 h-14 rounded-full"
+          />
+        </template>
         <template #content>
-          🏗️ headline mit namen <br />
-          🏗️ #gast, #schlafzimmer, #betten, #zimmer
+          <p class="text-xl mt-2 font-normal text-gray-700">
+            5 Gäste · 2 Schlafzimmer · 2 Betten · 1 Badezimmer
+          </p>
         </template>
       </content-section>
 
       <content-section title="Allgemeine Infos">
         <template #content>
-          🏗️ infoliste mit icon/headline/beschreibung
+          <info-list :items="features" :view="true" />
         </template>
       </content-section>
 
-      <content-section title="Infotext">
+      <content-section>
         <template #content>
-          🏗️ Kurzer Text mit Infos zur Lage, Anbindung etc.
+          <p class="text-lg font-normal text-gray-700">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
         </template>
       </content-section>
 
@@ -44,7 +59,7 @@
 
       <content-section title="Ausstattung">
         <template #content>
-          <info-list :items="features" />
+          <info-list :items="features" :view="false" />
           <br />
           🏗️ Infos erweitern
         </template>

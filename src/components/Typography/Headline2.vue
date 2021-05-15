@@ -1,5 +1,7 @@
 <template>
-  <h2 class="text-2xl font-bold my-6">{{ text }}</h2>
+  <h2 class="text-xl md:text-2xl font-semibold md:font-bold">
+    {{ text }}
+  </h2>
 </template>
 
 <script>
